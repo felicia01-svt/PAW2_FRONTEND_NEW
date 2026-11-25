@@ -8,6 +8,9 @@ const home = () => {
 
 
         <NavLink to="/about" className="btn btn-primary">GO TO ABOUT PAGE</NavLink>
+        <NavLink to="/register" className="btn btn-primary">GO TO REGISTER PAGE</NavLink>
+
+
     </div>
   )
 }

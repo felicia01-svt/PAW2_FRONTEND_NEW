@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router";
 import about from "../pages/about/about";
 import home from "../pages/home/home";
+import register from "../pages/register/register";
 import PublicLayout from "../layouts/PublicLayout";
 
 const router = createBrowserRouter([
@@ -23,6 +24,17 @@ const router = createBrowserRouter([
                 path: '/about',
                 lazy: async() => {
                     const module = await import("../pages/about/about")
+
+                    return {
+                        Component: module.default
+                    }
+                }
+            },
+
+             {
+                path: '/register',
+                lazy: async() => {
+                    const module = await import("../pages/register/register")
 
                     return {
                         Component: module.default

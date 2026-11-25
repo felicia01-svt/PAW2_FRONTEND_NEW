@@ -6,7 +6,7 @@ const About = () => {
     <div>
       <h1>ABOUT PAGE</h1>
 
-      <NavLink to="/home" className="btn btn-primary">
+      <NavLink to="/" className="btn btn-primary">
         BACK TO HOME
       </NavLink>
     </div>

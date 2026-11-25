@@ -8,7 +8,7 @@ const ThemeSwap = () => {
         setIsDark(!isDark)
     }
     useEffect(()=> {
-        document.documentElement.dataset.theme = isDark ? 'cupcake' : 'light'
+        document.documentElement.dataset.theme = isDark ? 'luxury' : 'autumn'
     },[isDark])
 
     if(isDark){
